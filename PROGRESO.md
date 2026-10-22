@@ -2,7 +2,7 @@
 
 Proyecto: contador de días hasta una fecha (JavaScript en el navegador: `index.html` + `script.js`).
 
-## Clase 1: Variables y tipos de datos (en curso)
+## Clase 1: Variables y tipos de datos (completada)
 
 **Qué vio**
 - Una variable es una caja con nombre que guarda algo.
@@ -21,11 +21,18 @@ Proyecto: contador de días hasta una fecha (JavaScript en el navegador: `index.
 - Entender que el código se mira en el navegador y no en VS Code (guardar con Ctrl + S, recargar con F5).
 - La fecha escrita sin comillas (`2027-4-15`) se calcula como una resta.
 
+- Instaló Git, configuró su nombre y mail solo para este repo, y vio `git status`, `git add .`, `git commit -m` y `git push -u origin main`.
+- Primer commit y primer push a su GitHub (nicolasagradnik-source/Contador-de-dias), con autor Nicolas Agradnik.
+
+**Chequeo final**
+- `let` vs `const`: bien (lo explicó con el puntaje de un juego).
+- Fecha con comillas vs resta: bien.
+- `console.log(Evento)` vs `console.log("Evento")`: respondió al revés. Quedó para que lo compruebe él en la consola.
+
 **Pendiente**
-- Chequeo final de 3 preguntas (diferencia entre `console.log(Evento)` y `console.log("Evento")`, por qué la fecha va con comillas, cuándo usar `let`).
-- Pulir el mensaje para que salga `Evento: Mi cumple` (sin el espacio antes de los dos puntos).
-- Instalar Git y hacer el primer commit con mensaje escrito por Nico. Chequear antes que el repo apunte a su GitHub (`git remote -v`) y que `user.name`/`user.email` sean los suyos.
-- Convención de nombres (empezar con minúscula, ej: `nombreDelEvento`).
+- Pulir el mensaje para que salga `Evento: Mi cumple` en un solo texto con los dos puntos pegados (hoy sale `Evento : Mi cumple`).
+- Convención de nombres (empezar con minúscula, ej: `nombreDelEvento`) y no repetir datos que ya están en una caja.
+- Practicar el ciclo `git status`, `git add .`, `git commit -m`, `git push` con este mismo cambio de PROGRESO.md.
 
 ## Próxima clase
 Clase 2: operaciones y fechas.
