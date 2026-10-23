@@ -60,5 +60,33 @@ Proyecto: contador de días hasta una fecha (JavaScript en el navegador: `index.
 - Usar la caja `fecha` en vez de repetir `"2027-4-15"` en `new Date(...)`, y escribir la fecha como `"2027-04-15"`.
 - Mensajes de commit más cortos.
 
+## Clase 3: if / else (completada)
+
+**Qué vio**
+- `if / else`: el programa elige qué hacer según una condición.
+- Comparaciones: `<`, `>`, `>=`, `===`. Un solo `=` guarda en una caja, `===` compara.
+- Llaves `{ }`: cada una que se abre tiene que cerrarse.
+- Encadenar decisiones con `else if` (lo descubrió él; se profundiza en la clase 4).
+
+**Qué logró**
+- Los tres mensajes de la misión: `Faltan X días`, `Ya pasó hace X días` y `¡Es hoy! 🎉`.
+- Descubrió solo por qué `dias === 0` no funcionaba (los días tienen decimales) y lo arregló con `diasRedondeados`.
+- Limpió `script.js` borrando los `console.log` de prueba y la parte de los caramelos.
+- Commit y push de la clase 3 hechos por él.
+
+**Qué le costó**
+- Separar las piezas de un `console.log` con comas (se repitió).
+- Usar `=` en vez de `===` en una comparación.
+- Contar las llaves al anidar un `if` adentro de un `else`.
+- Hacer cambios en el bloque equivocado (el `* -1` en el `else` en vez del `if`); se perdió y volvió a un estado que andaba.
+- Crear una caja dentro de un `if` y querer usarla afuera.
+
+**Pendiente**
+- Responder el chequeo de la clase 3: para qué sirve `if / else`, por qué `===` y no `=`, por qué `dias === 0` fallaba.
+- Revisar la fecha real del evento en `script.js` (la última era de prueba).
+- Nombres de variables: empezar con minúscula (`evento`), sin tildes ni `ñ`.
+- Usar la caja `fecha` en vez de repetir la fecha en `new Date(...)`, y usar `diasRedondeados` también en los mensajes. Revisar si hace falta la caja `dia`, que repite `dias`.
+- Escribir las fechas completas (`"2027-04-15"`).
+
 ## Próxima clase
-Clase 3: if / else. Misión: si faltan 0 días → "¡Es hoy! 🎉"; si ya pasó → "Ya pasó hace X días"; si no → "Faltan X días".
+Clase 4: `else if` y casos especiales. Misión: si falta 1 día decir "Falta 1 día" (en singular); menos de 7 días → "¡Ya casi!"; más de 100 → "Uff, falta un montón".
