@@ -12,10 +12,15 @@ if (diasRedondeados < 0) {
  console.log ("¡Es hoy! 🎉");
 } else if (diasRedondeados === 1) {
   console.log("falta 1  día");
-} else if(diasRedondeados <= 7) {
+} else if (diasRedondeados >= 2 && diasRedondeados  <= 7) {
   console.log("¡Ya casi!");
 } else if (diasRedondeados >= 100) {
   console.log("Uff, falta un monton");
 } else {
  console.log("Faltan", ((Math.round (dias))), "días");
+}
+const diaDeLaSemana = cumple.getDay();
+console.log(diaDeLaSemana);
+if (diaDeLaSemana === 0  || diaDeLaSemana === 6) {
+  console.log("Es fin de Semana 🥳");
 }

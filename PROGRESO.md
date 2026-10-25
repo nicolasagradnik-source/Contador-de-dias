@@ -88,5 +88,31 @@ Proyecto: contador de días hasta una fecha (JavaScript en el navegador: `index.
 - Usar la caja `fecha` en vez de repetir la fecha en `new Date(...)`, y usar `diasRedondeados` también en los mensajes. Revisar si hace falta la caja `dia`, que repite `dias`.
 - Escribir las fechas completas (`"2027-04-15"`).
 
+## Clase 4: else if y casos especiales (completada)
+
+**Qué vio**
+- Cadenas de `if / else if / else`: se revisan de arriba hacia abajo y gana la primera condición verdadera, por eso **el orden importa** (el caso específico "1 día" va antes que el rango "menos de 7").
+- Un solo `if` al principio y un solo `else` al final; los `else if` van en el medio.
+- Adelanto de `&&` ("y"), que se ve en la clase 5.
+
+**Qué logró**
+- Una sola cadena con todos los casos: ya pasó, es hoy, falta 1 día, ¡Ya casi!, Uff falta un montón y Faltan X días.
+- Encontró solo un bug: con la fecha de hoy salía "Ya pasó hace 0 días", porque `dia < 0` comparaba el número con decimales; lo resolvió comparando `diasRedondeados`.
+- Commit y push de la clase 4 hechos por él.
+
+**Qué le costó**
+- Mezclar el ejemplo de la clase (notas, pizzas) con su código, y copiar nombres de cajas del ejemplo.
+- Tener dos cadenas de `if` separadas, que muestran dos mensajes; juntarlas en una sola.
+- Elegir la caja correcta en la comparación (puso `hoy` en vez de `diasRedondeados`).
+- Escribir la fecha completa (`"2020-1-"` daba `NaN`).
+- Se frustró y pidió ayuda cuando tenía muchos cambios juntos: funciona mejor de a un paso.
+
+**Pendiente**
+- Responder el chequeo de las clases 3 y 4 (orden de los `else if`, qué pasa si se cumplen varios, por qué `diasRedondeados` en vez de `dia`).
+- Pulir mensajes: `Falta 1 día` (mayúscula y un solo espacio), `montón` con tilde, y decidir si "¡Ya casi!" es `< 7` o `<= 7`.
+- Limpiar `script.js`: las cajas `fecha` y `dia` no se usan; usar `diasRedondeados` también en los mensajes; nombres con minúscula (`evento`).
+- Escribir fechas completas con formato `"2027-04-15"`.
+- Mensajes de commit que cuenten qué hizo (el de la clase 4 dice "if y else").
+
 ## Próxima clase
-Clase 4: `else if` y casos especiales. Misión: si falta 1 día decir "Falta 1 día" (en singular); menos de 7 días → "¡Ya casi!"; más de 100 → "Uff, falta un montón".
+Clase 5: operadores lógicos (`&&`, `||`, `!`). Misión: mensaje especial si faltan entre 1 y 7 días; avisar si el evento cae un fin de semana.
