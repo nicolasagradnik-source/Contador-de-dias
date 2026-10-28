@@ -114,5 +114,33 @@ Proyecto: contador de días hasta una fecha (JavaScript en el navegador: `index.
 - Escribir fechas completas con formato `"2027-04-15"`.
 - Mensajes de commit que cuenten qué hizo (el de la clase 4 dice "if y else").
 
+## Clase 5: operadores lógicos (completada)
+
+**Qué vio**
+- `&&` ("y": las dos condiciones a la vez), `||` ("o": alcanza con una) y `!` ("no": da vuelta el resultado).
+- `fecha.getDay()` devuelve el día de la semana (0 domingo ... 6 sábado).
+
+**Qué logró**
+- "Entre 2 y 7 días" con `diasRedondeados >= 2 && diasRedondeados <= 7` (el caso de 1 día queda arriba).
+- Aviso de fin de semana con `diaDeLaSemana === 0 || diaDeLaSemana === 6`, probado con una fecha de sábado.
+- Commit y push de la clase 5 hechos por él.
+
+**Qué le costó**
+- Elegir el operador correcto: cambió `&&` por `||` en el rango de días sin querer, y después dejó los límites al revés (`>= 7 && <= 2`, que nunca se cumple).
+- Olvidar el operador entre dos comparaciones.
+- El orden: usar una caja antes de crearla (`console.log` antes del `const`).
+- Pasarle cosas a `getDay()`, que va con paréntesis vacíos.
+
+**Chequeo final**
+- `&&` es "y" y `||` es "o": bien. `!` da vuelta el resultado: bien.
+- Por qué rango de días con `&&` y fin de semana con `||`: no lo explicó todavía; quedó pendiente.
+
+**Pendiente**
+- Explicar con sus palabras por qué `&&` en el rango y `||` en el fin de semana (un día no puede ser sábado y domingo a la vez).
+- Mostrar la cantidad de días también en el mensaje `Uff, falta un montón` (hoy el número no aparece cuando faltan 100 o más); lo preguntó él.
+- Sacar el `console.log(diaDeLaSemana)` de prueba; la caja `dia` y `fecha` no se usan.
+- Pulir mensajes: `Falta 1 día`, `montón` con tilde, y decidir `<` o `<=` en los límites.
+- Mensajes de commit que cuenten qué hace el programa.
+
 ## Próxima clase
-Clase 5: operadores lógicos (`&&`, `||`, `!`). Misión: mensaje especial si faltan entre 1 y 7 días; avisar si el evento cae un fin de semana.
+Clase 6: funciones (para qué sirven, parámetros y `return`). Misión: pasar el código a funciones como `calcularDiasQueFaltan(fecha)` y `armarMensaje(dias, nombreEvento)`.
